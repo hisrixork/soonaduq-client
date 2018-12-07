@@ -69,9 +69,9 @@
         return new Promise((resolve, reject) => {
           this.api.get(`/wait/${this.prayer.name}`).then((r) => {
             this.until = this.helpers.moment(this.prayer.time)
-            this.until.add(5, 'minutes')
+            // this.until.add(5, 'minutes')
             // this.until.add(20, 'seconds')
-            // this.until.add(parseInt(r.data) - 1, 'minutes')
+            this.until.add(parseInt(r.data) - 1, 'minutes')
             resolve(true)
           })
         })
