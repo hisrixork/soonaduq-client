@@ -20,7 +20,7 @@
       let self = this
       setTimeout(() => {
         self.close()
-      }, 120000)
+      }, 12000)
     },
 
     methods: {
