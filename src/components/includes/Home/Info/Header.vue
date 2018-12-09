@@ -10,7 +10,7 @@
     </div>
 
     <div class="info-bismi">
-      <img src="/static/img/content/bismi.png" alt="" class="w-50 mx-auto d-block" style="">
+      <img src="/static/img/content/bismi.png" alt="" class="img-fluid w50 mx-auto d-block" style="">
     </div>
   </div>
 

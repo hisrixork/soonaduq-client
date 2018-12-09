@@ -1,6 +1,6 @@
 <template>
-  <div class="info-next-time text-center fa-3x w-100">
-    <div class="info-next-time-label align-self-start">
+  <div class="info-next-time text-center fa-3x w-100 pt-5 mt-4">
+    <div class="info-next-time-label align-self-start pt-5">
       <div class="row">
         <label for="label" class="mx-auto">Prochaine prière :</label>
       </div>
@@ -11,7 +11,12 @@
             </span>
       </div>
     </div>
-    <div class="info-next-time-value mx-auto text-center fa-2x">
+    <div class="info-next-time-value mx-auto text-center">
+      <hr class="w-50">
+      <span class=" fa-2x">{{ getNextTime() ? getNextTime().format('LT') : '' }}</span>
+      <hr class="w-50">
+    </div>
+    <div class="info-next-time-value mx-auto text-center fa-1x5">
       <!--<label id="next-hour">{{ // \App\Helpers::nextTime($times)->format('H') }}</label>-->
       <label id="next-hour">{{ helpers.twoDigits(next.hours()) }}</label>
       <!--<label id="next-hour">{{ getNextTime().format('LTS') }}</label>-->
@@ -71,5 +76,31 @@
 </script>
 
 <style scoped>
+
+  .fa-1x5 {
+    font-size: 1.25em;
+  }
+
+  hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+  }
 
 </style>

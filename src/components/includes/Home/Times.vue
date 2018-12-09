@@ -6,15 +6,15 @@
          data-time=" $name " id=" $name " v-for="(prayer, name) in prayers"
          :class="next.name === name ? 'bg-success text-white' : ''">
 
-      <div class="time-name col-4 text-left">
+      <div class="time-name col-4 text-left fa-1x5">
         {{ name | capitalize }}
       </div>
 
-      <div class="time-hour col-5 text-center">
+      <div class="time-hour col-5 text-center fa-2x">
         {{ helpers.moment(prayer.date).format('HH:mm') }}
       </div>
 
-      <div class="time-wait col-3 text-right arab">
+      <div class="time-wait col-3 text-right arab fa-1x5">
         {{ helpers.translate(name) }}
       </div>
     </div>
@@ -38,5 +38,9 @@
 </script>
 
 <style scoped>
+
+  .fa-1x5 {
+    font-size: 1.5em;
+  }
 
 </style>

@@ -218,13 +218,13 @@ body {
 
 .info-name {
   top: 0;
-  height: 10%;
+  /*height: 10%;*/
   padding-top: 10px;
 }
 
 .info-bismi {
   top: 10%;
-  height: 10%;
+  /*height: 10%;*/
 }
 
 .info-news {
@@ -238,6 +238,7 @@ body {
 }
 
 .info-bismi img {
+  height: 100px;
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
 }
