@@ -11,7 +11,7 @@
     </div>
     <div id="modalHadithMain" class="px-3">
       <div class="row ayah-arb my-5 fa-4x d-flex justify-content-center align-items-center w-100">
-        <label class="text-center mx-auto arab" v-html="content">
+        <label class="text-center mx-auto" v-html="content">
         </label>
       </div>
     </div>
